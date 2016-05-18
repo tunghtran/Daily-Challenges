@@ -1,3 +1,22 @@
+/**DESCRIPTION
+ * Your dog just won X place in a dog show, congratulations! 
+ * You post your star's photo and placement announcement to /r/aww and,
+ * predictably, a funny redditor asks what places the rest of 
+ * the participating dogs took. Your job is to create a program 
+ * that lists all places within the range of 0-100 in spoken English,
+ * excluding the placing (X) of your winning pup.
+ * 
+ */
+
+/** INPUT is the integer placement of your dog (X) within the range 0-100.
+ * 
+ */
+
+/** OUTPUT
+ * A reader should see a neatly formatted list of placements from 0-100 
+ * in spoken English, excluding your dog's placement.
+ */
+
 import java.util.Scanner;
 
 public class Dogs implements EulerSolution{
