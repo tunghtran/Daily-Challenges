@@ -19,12 +19,12 @@
 
 import java.util.Scanner;
 
-public class Dogs implements EulerSolution{
+public class Ch267_DogWinningPosition implements Solution{
     private static int START = 0;
     private static int END = 101;
     
     public static void main(String[] args) {
-        System.out.println(new Dogs().run());
+        System.out.println(new Ch267_DogWinningPosition().run());
     }
 
     @Override
