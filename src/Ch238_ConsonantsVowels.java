@@ -43,36 +43,39 @@ public class Ch238_ConsonantsVowels implements Solution {
         
         while(!done){
             String input = in.nextLine();
-            char[] split = input.toCharArray();
-            char[] output = new char[split.length];
-            for(int i = 0; i < output.length; i++){
-                output[i] = getChar(split[i]);
-                System.out.print(output[i]+"");
-            }
-            System.out.println();
+            generateWord(input);
         }
         
         return "";
     }
 
-    public char getChar(char chara){
-        switch(chara){
-            case 'c':
-                chara = consonants[(int) (Math.random() * (consonants.length))];
-                break;
-            case 'v':
-                chara = vowels[(int) (Math.random() * (vowels.length))];
-                break;
-            case 'C':
-                chara = Character.toUpperCase(consonants[(int) (Math.random() * (consonants.length))]);
-                break;
-            case 'V':
-                chara = Character.toUpperCase(vowels[(int) (Math.random() * (vowels.length))]);
-                break;
-            default:
-                throw new RuntimeException("Invalid input");
-                
+    public void generateWord(String str){
+        char[] split = str.toCharArray();
+        
+        for(char x : split){
+            switch(x){
+                case 'c':
+                    x = consonants[(int) (Math.random() * (consonants.length))];
+                    System.out.print(x);
+                    break;
+                case 'v':
+                    x = vowels[(int) (Math.random() * (vowels.length))];
+                    System.out.print(x);
+                    break;
+                case 'C':
+                    x = Character.toUpperCase(consonants[(int) (Math.random() * (consonants.length))]);
+                    System.out.print(x);
+                    break;
+                case 'V':
+                    x = Character.toUpperCase(vowels[(int) (Math.random() * (vowels.length))]);
+                    System.out.print(x);
+                    break;
+                default: //handles invalid input
+                    throw new RuntimeException("Invalid input");
+            }
+            
         }
-        return chara;
+
+        System.out.println("\n");
     }
 }
