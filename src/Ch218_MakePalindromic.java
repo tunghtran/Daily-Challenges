@@ -1,4 +1,12 @@
 import java.math.BigInteger;
+/**DESCRIPTION (https://www.reddit.com/r/dailyprogrammer/comments/38yy9s/20150608_challenge_218_easy_making_numbers/)
+ * To covert nearly any number into a palindromic number you operate by 
+ * reversing the digits and adding and then repeating the steps until 
+ * you get a palindromic number. Some require many steps.
+ * e.g. 24 gets palindromic after 1 steps: 66 -> 24 + 42 = 66
+ * while 28 gets palindromic after 2 steps: 121 -> 28 + 82 = 110, so 110 + 11 (110 reversed) = 121.
+ * 
+ */
 
 /**
  *
